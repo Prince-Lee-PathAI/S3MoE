@@ -1,7 +1,7 @@
 # S³MoE
 
 **Model overview.** 
-[![Overview of the S³MoE architecture](assets/overview.jpg)](assets/overview.jpg)
+[![Overview of the S³MoE architecture](assets/overview.jpg)](assets/Main_Fig.jpg)
 
 ## Files
 
