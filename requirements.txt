@@ -1,0 +1,7 @@
+# Tested core environment
+numpy==2.2.6
+scikit-learn==1.7.2
+torch==2.5.1
+# Only needed for `semantics.py encode`; not needed with existing text prototypes.
+transformers==4.44.2
+llm2vec==0.2.3

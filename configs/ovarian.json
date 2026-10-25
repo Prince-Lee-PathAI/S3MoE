@@ -1,0 +1,184 @@
+{
+  "classes": [
+    {
+      "id": 0,
+      "name": "solid",
+      "display": "Solid"
+    },
+    {
+      "id": 1,
+      "name": "endometrioid_like",
+      "display": "Endometrioid-like"
+    },
+    {
+      "id": 2,
+      "name": "transitional_like",
+      "display": "Transitional-like"
+    },
+    {
+      "id": 3,
+      "name": "inflammatory_cells",
+      "display": "Inflammatory Cells"
+    },
+    {
+      "id": 4,
+      "name": "necrosis",
+      "display": "Necrosis"
+    },
+    {
+      "id": 5,
+      "name": "stroma",
+      "display": "Stroma"
+    },
+    {
+      "id": 6,
+      "name": "nuclear_atypia",
+      "display": "SET ambiguous (project fallback)"
+    },
+    {
+      "id": 7,
+      "name": "other",
+      "display": "Other"
+    }
+  ],
+  "coarse_groups": [
+    "set_tumor",
+    "inflammatory_cells",
+    "necrosis",
+    "stroma",
+    "other"
+  ],
+  "other_components": [
+    "other_background",
+    "other_epithelium",
+    "other_muscle",
+    "other_adipose"
+  ],
+  "fine_groups": [
+    "solid",
+    "endometrioid_like",
+    "transitional_like"
+  ],
+  "fallback_name": "nuclear_atypia",
+  "other_aggregation": "max cosine across component prototypes",
+  "set_min_cosine": -1.0,
+  "fine_margin_threshold": 0.01,
+  "display_softmax_scale": 100.0,
+  "assignment": "hierarchical_cosine",
+  "prompt_records": [
+    {
+      "prototype": "set_tumor",
+      "text": "An image of high-grade serous ovarian carcinoma with a solid, pseudo-endometrioid or transitional cell-like tumor growth pattern."
+    },
+    {
+      "prototype": "set_tumor",
+      "text": "An H&E stained histopathology patch showing high-grade serous ovarian carcinoma with a solid, pseudo-endometrioid or transitional cell-like tumor growth pattern."
+    },
+    {
+      "prototype": "inflammatory_cells",
+      "text": "An image of dense inflammatory cell infiltration in tissue, including small dark immune cells."
+    },
+    {
+      "prototype": "inflammatory_cells",
+      "text": "An H&E stained histopathology patch showing dense inflammatory cell infiltration in tissue, including small dark immune cells."
+    },
+    {
+      "prototype": "necrosis",
+      "text": "An image of necrotic tissue with dead cells, cell debris and loss of viable tissue architecture."
+    },
+    {
+      "prototype": "necrosis",
+      "text": "An H&E stained histopathology patch showing necrotic tissue with dead cells, cell debris and loss of viable tissue architecture."
+    },
+    {
+      "prototype": "stroma",
+      "text": "An image of collagenous fibrous stroma with fibroblasts and extracellular matrix."
+    },
+    {
+      "prototype": "stroma",
+      "text": "An H&E stained histopathology patch showing collagenous fibrous stroma with fibroblasts and extracellular matrix."
+    },
+    {
+      "prototype": "other_background",
+      "text": "An image of empty glass background without tissue."
+    },
+    {
+      "prototype": "other_background",
+      "text": "An H&E stained histopathology patch showing empty glass background without tissue."
+    },
+    {
+      "prototype": "other_epithelium",
+      "text": "An image of benign epithelial tissue with orderly epithelial cells."
+    },
+    {
+      "prototype": "other_epithelium",
+      "text": "An H&E stained histopathology patch showing benign epithelial tissue with orderly epithelial cells."
+    },
+    {
+      "prototype": "other_muscle",
+      "text": "An image of muscle tissue with bundles of elongated muscle fibers."
+    },
+    {
+      "prototype": "other_muscle",
+      "text": "An H&E stained histopathology patch showing muscle tissue with bundles of elongated muscle fibers."
+    },
+    {
+      "prototype": "other_adipose",
+      "text": "An image of adipose tissue with large clear fat cells."
+    },
+    {
+      "prototype": "other_adipose",
+      "text": "An H&E stained histopathology patch showing adipose tissue with large clear fat cells."
+    },
+    {
+      "prototype": "solid",
+      "text": "An H&E image of ovarian high-grade serous carcinoma with compact solid sheets and bulky tumor nests."
+    },
+    {
+      "prototype": "solid",
+      "text": "An H&E image showing densely packed tumor cells forming broad, continuous solid sheets."
+    },
+    {
+      "prototype": "solid",
+      "text": "An H&E image showing cohesive solid tumor islands with a predominantly compact architecture."
+    },
+    {
+      "prototype": "endometrioid_like",
+      "text": "An H&E image of ovarian high-grade serous carcinoma with pseudo-endometrioid glands and cribriform architecture."
+    },
+    {
+      "prototype": "endometrioid_like",
+      "text": "An H&E image showing closely packed gland-like tubules with recognizable round luminal spaces."
+    },
+    {
+      "prototype": "endometrioid_like",
+      "text": "An H&E image showing cribriform tumor nests containing multiple rounded glandular lumina."
+    },
+    {
+      "prototype": "transitional_like",
+      "text": "An H&E image showing broad papillary folds covered by multiple layers of tumor cells."
+    },
+    {
+      "prototype": "transitional_like",
+      "text": "An H&E image showing multilayered tumor epithelium forming thick, wavy bands along cystic spaces."
+    },
+    {
+      "prototype": "transitional_like",
+      "text": "An H&E image of ovarian high-grade serous carcinoma with thick undulating epithelial bands and stratified architecture."
+    }
+  ],
+  "prototype_names": [
+    "set_tumor",
+    "inflammatory_cells",
+    "necrosis",
+    "stroma",
+    "other_background",
+    "other_epithelium",
+    "other_muscle",
+    "other_adipose",
+    "solid",
+    "endometrioid_like",
+    "transitional_like"
+  ],
+  "note": "nuclear_atypia is the SET ambiguity fallback, not an independently detected atypia phenotype."
+}

@@ -1,0 +1,188 @@
+{
+  "classes": [
+    {
+      "id": 0,
+      "name": "tumor",
+      "display": "Tumor",
+      "display_zh": "肿瘤"
+    },
+    {
+      "id": 1,
+      "name": "inflammatory_cells",
+      "display": "Inflammatory Cells",
+      "display_zh": "炎症细胞"
+    },
+    {
+      "id": 2,
+      "name": "stroma",
+      "display": "Stroma",
+      "display_zh": "间质"
+    },
+    {
+      "id": 3,
+      "name": "necrosis",
+      "display": "Necrosis",
+      "display_zh": "坏死"
+    },
+    {
+      "id": 4,
+      "name": "other",
+      "display": "Other",
+      "display_zh": "其他"
+    }
+  ],
+  "assignment": "flat_argmax_cosine",
+  "prototype_names": [
+    "tumor",
+    "inflammatory_cells",
+    "stroma",
+    "necrosis",
+    "other_background",
+    "other_epithelium",
+    "other_muscle",
+    "other_adipose"
+  ],
+  "other_components": [
+    "other_background",
+    "other_epithelium",
+    "other_muscle",
+    "other_adipose"
+  ],
+  "other_aggregation": "max",
+  "display_softmax_scale": 100,
+  "stain_policy": "Use the matching HE or IHC prompt set without mixing their prototypes",
+  "stain_records": {
+    "HE": [
+      {
+        "prototype": "tumor",
+        "text": "An H&E-stained histopathology image showing breast carcinoma tissue with atypical epithelial tumor cells arranged in irregular nests, sheets or glands."
+      },
+      {
+        "prototype": "tumor",
+        "text": "An H&E-stained histopathology image showing malignant breast epithelial tissue with crowded irregular nuclei and disorganized tumor cell architecture."
+      },
+      {
+        "prototype": "inflammatory_cells",
+        "text": "An H&E-stained histopathology image showing inflammatory cell infiltration, including dense aggregates or scattered small lymphocytes with dark round nuclei."
+      },
+      {
+        "prototype": "inflammatory_cells",
+        "text": "An H&E-stained histopathology image showing immune-cell-rich breast tissue containing numerous small round inflammatory cells."
+      },
+      {
+        "prototype": "stroma",
+        "text": "An H&E-stained histopathology image showing collagenous fibrous breast stroma with spindle-shaped fibroblasts and extracellular matrix."
+      },
+      {
+        "prototype": "stroma",
+        "text": "An H&E-stained histopathology image showing breast stromal connective tissue with bundles of collagen and relatively sparse spindle cells."
+      },
+      {
+        "prototype": "necrosis",
+        "text": "An H&E-stained histopathology image showing necrotic tissue with dead cells, cell debris and loss of viable tissue architecture."
+      },
+      {
+        "prototype": "necrosis",
+        "text": "An H&E-stained histopathology image showing necrotic breast tissue containing fragmented nuclei and amorphous cellular debris."
+      },
+      {
+        "prototype": "other_background",
+        "text": "An H&E-stained histopathology image showing empty glass background without tissue."
+      },
+      {
+        "prototype": "other_background",
+        "text": "An H&E-stained histopathology image showing a largely empty region without recognizable tissue structures."
+      },
+      {
+        "prototype": "other_epithelium",
+        "text": "An H&E-stained histopathology image showing benign breast ducts or lobules lined by orderly epithelial cells with regular nuclei."
+      },
+      {
+        "prototype": "other_epithelium",
+        "text": "An H&E-stained histopathology image showing non-neoplastic breast glandular tissue with preserved orderly ductal or lobular architecture."
+      },
+      {
+        "prototype": "other_muscle",
+        "text": "An H&E-stained histopathology image showing muscle tissue with bundles of elongated muscle fibers."
+      },
+      {
+        "prototype": "other_muscle",
+        "text": "An H&E-stained histopathology image showing organized bundles of elongated muscle cells."
+      },
+      {
+        "prototype": "other_adipose",
+        "text": "An H&E-stained histopathology image showing adipose tissue with large clear fat cells separated by thin tissue septa."
+      },
+      {
+        "prototype": "other_adipose",
+        "text": "An H&E-stained histopathology image showing breast fatty tissue containing large round empty-appearing adipocytes."
+      }
+    ],
+    "IHC": [
+      {
+        "prototype": "tumor",
+        "text": "An immunohistochemistry-stained histopathology image showing breast carcinoma tissue with atypical epithelial tumor cells arranged in irregular nests, sheets or glands."
+      },
+      {
+        "prototype": "tumor",
+        "text": "An immunohistochemistry-stained histopathology image showing malignant breast epithelial tissue with crowded irregular nuclei and disorganized tumor cell architecture."
+      },
+      {
+        "prototype": "inflammatory_cells",
+        "text": "An immunohistochemistry-stained histopathology image showing inflammatory cell infiltration, including dense aggregates or scattered small lymphocytes with dark round nuclei."
+      },
+      {
+        "prototype": "inflammatory_cells",
+        "text": "An immunohistochemistry-stained histopathology image showing immune-cell-rich breast tissue containing numerous small round inflammatory cells."
+      },
+      {
+        "prototype": "stroma",
+        "text": "An immunohistochemistry-stained histopathology image showing collagenous fibrous breast stroma with spindle-shaped fibroblasts and extracellular matrix."
+      },
+      {
+        "prototype": "stroma",
+        "text": "An immunohistochemistry-stained histopathology image showing breast stromal connective tissue with bundles of collagen and relatively sparse spindle cells."
+      },
+      {
+        "prototype": "necrosis",
+        "text": "An immunohistochemistry-stained histopathology image showing necrotic tissue with dead cells, cell debris and loss of viable tissue architecture."
+      },
+      {
+        "prototype": "necrosis",
+        "text": "An immunohistochemistry-stained histopathology image showing necrotic breast tissue containing fragmented nuclei and amorphous cellular debris."
+      },
+      {
+        "prototype": "other_background",
+        "text": "An immunohistochemistry-stained histopathology image showing empty glass background without tissue."
+      },
+      {
+        "prototype": "other_background",
+        "text": "An immunohistochemistry-stained histopathology image showing a largely empty region without recognizable tissue structures."
+      },
+      {
+        "prototype": "other_epithelium",
+        "text": "An immunohistochemistry-stained histopathology image showing benign breast ducts or lobules lined by orderly epithelial cells with regular nuclei."
+      },
+      {
+        "prototype": "other_epithelium",
+        "text": "An immunohistochemistry-stained histopathology image showing non-neoplastic breast glandular tissue with preserved orderly ductal or lobular architecture."
+      },
+      {
+        "prototype": "other_muscle",
+        "text": "An immunohistochemistry-stained histopathology image showing muscle tissue with bundles of elongated muscle fibers."
+      },
+      {
+        "prototype": "other_muscle",
+        "text": "An immunohistochemistry-stained histopathology image showing organized bundles of elongated muscle cells."
+      },
+      {
+        "prototype": "other_adipose",
+        "text": "An immunohistochemistry-stained histopathology image showing adipose tissue with large clear fat cells separated by thin tissue septa."
+      },
+      {
+        "prototype": "other_adipose",
+        "text": "An immunohistochemistry-stained histopathology image showing breast fatty tissue containing large round empty-appearing adipocytes."
+      }
+    ]
+  }
+}
