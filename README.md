@@ -2,6 +2,7 @@
 A implementation of  S³MoE: Semantic-Spatial Subgraph Disentangled Learning with
 Mixture of Experts for Treatment Response Prediction on High-Grade
 Serous Ovarian Cancer Whole-Slide Images
+
 **Model overview.** 
 ![S3MoE architecture](./assets/Main_Fig.jpg)
 
