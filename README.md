@@ -1,6 +1,7 @@
 # S³MoE
 
-A compact implementation of semantic/spatial subgraph mixture-of-experts learning for WSI-level binary treatment response prediction. The complete model combines two GATv2 graph encoders, per-WSI expert-choice routing, attention across experts, and a gated global visual residual.
+**Model overview.** 
+[![Overview of the S³MoE architecture](assets/overview.jpg)](assets/overview.jpg)
 
 ## Files
 
